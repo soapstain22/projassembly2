@@ -244,8 +244,44 @@ int main(int argc,char *argv[])
          fwrite(&macword, 2, 1, outfile); // write out instruction
          loc_ctr++;
       }
+      else
 
       // code missing here for st, bl, blr, and, ldr, str, not
+
+      if (!mystrcmpi(mnemonic, "st" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "bl" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "blr" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "and" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "ldr" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "str" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "not" ))
+      {
+         // ADD CODE HERE
+      }
 
       else
       if (!mystrcmpi(mnemonic, "jmp" ))     // also ret instruction
@@ -275,6 +311,31 @@ int main(int argc,char *argv[])
 
       // code missing here for lea, trap (halt, nl, dout), .word
 
+      if (!mystrcmpi(mnemonic, "lea" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "halt" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "nl" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, "dout" ))
+      {
+         // ADD CODE HERE
+      }
+      else
+      if (!mystrcmpi(mnemonic, ".word" ))
+      {
+         // ADD CODE HERE
+      }
+
       else
       if (!mystrcmpi(mnemonic, ".zero"))
       {
@@ -288,4 +349,5 @@ int main(int argc,char *argv[])
          error("Invalid mnemonic or directive");
    }
    // Close files.
-}
+}
+
